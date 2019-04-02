@@ -18,13 +18,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        imageA = findViewById(R.id.ivA);
-        imageB = findViewById(R.id.ivB);
         initView();
         findViewById(R.id.root).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                imageA.startAnimation(sato0);
+                if (imageA.getVisibility() == View.VISIBLE) {
+                    imageA.startAnimation(sato0);
+                }else{
+                    imageB.startAnimation(sato0);
+                }
             }
         });
     }
@@ -40,6 +42,36 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView(){
+        imageA = findViewById(R.id.ivA);
+        imageB = findViewById(R.id.ivB);
         showImageA();
+        sato0.setDuration(500);
+        sato1.setDuration(500);
+
+        sato0.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                if(imageA.getVisibility() == View.VISIBLE){
+                    imageA.setAnimation(null);
+                    showImageB();
+                    imageB.startAnimation(sato1);
+                }else {
+                    imageB.setAnimation(null);
+                    showImageA();
+                    imageA.startAnimation(sato1);
+                }
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+
     }
 }
