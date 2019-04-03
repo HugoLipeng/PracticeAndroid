@@ -21,10 +21,10 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
-    <GridLayout
+    <com.qiniu.hugo.game2048.GameView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:id="@+id/gameview">
-    </GridLayout>
+    </com.qiniu.hugo.game2048.GameView>
 </LinearLayout>
