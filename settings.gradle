@@ -1,1 +1,1 @@
-include ':app', ':card2d'
+include ':app', ':card2d', ':game2048'
