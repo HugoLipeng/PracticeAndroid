@@ -1,1 +1,1 @@
-include ':app', ':card2d', ':game2048', ':clock'
+include ':app', ':card2d', ':game2048', ':clock', ':catchcrazycat', ':GetMyPhoneNumber'
