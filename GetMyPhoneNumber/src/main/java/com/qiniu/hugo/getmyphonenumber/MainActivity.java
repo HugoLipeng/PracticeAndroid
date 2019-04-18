@@ -8,8 +8,10 @@ import android.widget.ListView;
 
 
 public class MainActivity extends Activity {
-	
-	private ListView lv;
+
+    private static final String TAG = "MainActivity";
+
+    private ListView lv;
 	private MyAdapter adapter;
 
     @Override

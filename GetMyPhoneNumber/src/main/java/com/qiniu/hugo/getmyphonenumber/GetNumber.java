@@ -6,6 +6,7 @@ import java.util.List;
 import android.content.Context;
 import android.database.Cursor;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
+import android.util.Log;
 
 public class GetNumber {
 	
@@ -20,7 +21,7 @@ public class GetNumber {
 			phoneName = cursor.getString(cursor.getColumnIndex(Phone.DISPLAY_NAME));
 			PhoneInfo phoneInfo = new PhoneInfo(phoneName, phoneNumber);
 			lists.add(phoneInfo);
-			System.out.println(phoneName+phoneNumber);
+			Log.d("hugo", "getNumber: "+phoneNumber+"---phoneNumber==>"+phoneName);
 		}
 		return null;
 	}

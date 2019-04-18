@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/GetMyPhoneNumber/GetMyPhoneNumber.iml" filepath="$PROJECT_DIR$/GetMyPhoneNumber/GetMyPhoneNumber.iml" />
       <module fileurl="file://$PROJECT_DIR$/PracticeAndroid.iml" filepath="$PROJECT_DIR$/PracticeAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/card2d/card2d.iml" filepath="$PROJECT_DIR$/card2d/card2d.iml" />
+      <module fileurl="file://$PROJECT_DIR$/catchcrazycat/catchcrazycat.iml" filepath="$PROJECT_DIR$/catchcrazycat/catchcrazycat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clock/clock.iml" filepath="$PROJECT_DIR$/clock/clock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/game2048/game2048.iml" filepath="$PROJECT_DIR$/game2048/game2048.iml" />
     </modules>
   </component>
 </project>
