@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ActivityLifeCycle/ActivityLifeCycle.iml" filepath="$PROJECT_DIR$/ActivityLifeCycle/ActivityLifeCycle.iml" />
       <module fileurl="file://$PROJECT_DIR$/GetMyPhoneNumber/GetMyPhoneNumber.iml" filepath="$PROJECT_DIR$/GetMyPhoneNumber/GetMyPhoneNumber.iml" />
       <module fileurl="file://$PROJECT_DIR$/PracticeAndroid.iml" filepath="$PROJECT_DIR$/PracticeAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
