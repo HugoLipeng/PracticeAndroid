@@ -1,5 +1,7 @@
 package com.qiniu.hugo.practiceandroid;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -24,7 +26,20 @@ public class FirstActivity extends AppCompatActivity{
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(FirstActivity.this,"hugo toast",Toast.LENGTH_LONG).show();
+//                Toast.makeText(FirstActivity.this,"hugo toast",Toast.LENGTH_LONG).show();
+//                finish();// equals to back
+                //显示Intent
+//                Intent intent = new Intent(FirstActivity.this,SecondActivity.class);
+//                intent.putExtra("extra_data",data);
+//                startActivity(intent);
+                //隐式Intent
+//                Intent intent = new Intent("com.qiniu.hugo.practiceandroid.ACTION_START");
+//                startActivity(intent);
+
+                //更多隐式Intent
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("http://www.baidu.com"));
+                startActivity(intent);
             }
         });
 
