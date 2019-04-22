@@ -1,1 +1,1 @@
-include ':app', ':card2d', ':game2048', ':clock', ':catchcrazycat', ':GetMyPhoneNumber', ':ActivityLifeCycle', ':ActivityTest', ':UIWidget', ':UILayout', ':UICustomViews', ':ListView', ':RecyclerView', ':UIBestPractice'
+include ':app', ':card2d', ':game2048', ':clock', ':catchcrazycat', ':GetMyPhoneNumber', ':ActivityLifeCycle', ':ActivityTest', ':UIWidget', ':UILayout', ':UICustomViews', ':ListView', ':RecyclerView', ':UIBestPractice', ':FragmentBestPractice'
