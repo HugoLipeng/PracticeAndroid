@@ -1,45 +1,98 @@
 package com.qiniu.hugo.notes;
 
 import android.app.Activity;
-import android.content.ContentValues;
+import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
+import android.widget.ListView;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+public class MainActivity extends Activity implements OnClickListener {
 
-/**
- * Created by hugo on 2019/4/30.
- */
+	private Button textbtn, imgbtn, videobtn;
+	private ListView lv;
+	private Intent i;
+	private MyAdapter adapter;
+	private NotesDB notesDB;
+	private SQLiteDatabase dbReader;
+	private Cursor cursor;
 
-public class MainActivity extends Activity {
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		initView();
+	}
 
-    private NotesDB notesDB;
-    private SQLiteDatabase dbwriter;
+	public void initView() {
+		lv = (ListView) findViewById(R.id.list);
+		textbtn = (Button) findViewById(R.id.text);
+		imgbtn = (Button) findViewById(R.id.img);
+		videobtn = (Button) findViewById(R.id.video);
+		textbtn.setOnClickListener(this);
+		imgbtn.setOnClickListener(this);
+		videobtn.setOnClickListener(this);
+		notesDB = new NotesDB(this);
+		dbReader = notesDB.getReadableDatabase();
+		lv.setOnItemClickListener(new OnItemClickListener() {
 
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        notesDB = new NotesDB(this);
-        dbwriter = notesDB.getWritableDatabase();
-        addDB();
-    }
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				cursor.moveToPosition(position);
+				Intent i = new Intent(MainActivity.this, SelectAct.class);
+				i.putExtra(NotesDB.ID,
+						cursor.getInt(cursor.getColumnIndex(NotesDB.ID)));
+				i.putExtra(NotesDB.CONTENT, cursor.getString(cursor
+						.getColumnIndex(NotesDB.CONTENT)));
+				i.putExtra(NotesDB.TIME,
+						cursor.getString(cursor.getColumnIndex(NotesDB.TIME)));
+				i.putExtra(NotesDB.PATH,
+						cursor.getString(cursor.getColumnIndex(NotesDB.PATH)));
+				i.putExtra(NotesDB.VIDEO,
+						cursor.getString(cursor.getColumnIndex(NotesDB.VIDEO)));
+				startActivity(i);
+			}
+		});
+	}
 
-    public void addDB(){
-        ContentValues cv = new ContentValues();
-        cv.put(NotesDB.CONTENT,"hello");
-        cv.put(NotesDB.TIME,getTime());
-        dbwriter.insert(NotesDB.TABLE_NAME,null,cv);
-    }
+	@Override
+	public void onClick(View v) {
+		i = new Intent(this, AddContent.class);
+		switch (v.getId()) {
+		case R.id.text:
+			i.putExtra("flag", "1");
+			startActivity(i);
+			break;
 
-    private String getTime() {
-        SimpleDateFormat format = new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss");
-        Date curDate = new Date();
-        String str = format.format(curDate);
-        return str;
-    }
+		case R.id.img:
+			i.putExtra("flag", "2");
+			startActivity(i);
+			break;
 
+		case R.id.video:
+			i.putExtra("flag", "3");
+			startActivity(i);
+			break;
+		}
+	}
+
+	public void selectDB() {
+		cursor = dbReader.query(NotesDB.TABLE_NAME, null, null, null, null,
+				null, null);
+		adapter = new MyAdapter(this, cursor);
+		lv.setAdapter(adapter);
+	}
+
+	@Override
+	protected void onResume() {
+		super.onResume();
+		selectDB();
+	}
 
 }
