@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title"></include>
+
+    <Button
+        android:id="@+id/bt_show_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击显示数据"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="显示传递过来的数据"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_c_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp" />
+</LinearLayout>
