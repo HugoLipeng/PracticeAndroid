@@ -3,8 +3,37 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ActivityLifeCycle/ActivityLifeCycle.iml" filepath="$PROJECT_DIR$/ActivityLifeCycle/ActivityLifeCycle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ActivityTest/ActivityTest.iml" filepath="$PROJECT_DIR$/ActivityTest/ActivityTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndroidThread/AndroidThread.iml" filepath="$PROJECT_DIR$/AndroidThread/AndroidThread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Broadcast/Broadcast.iml" filepath="$PROJECT_DIR$/Broadcast/Broadcast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CameraAlbum/CameraAlbum.iml" filepath="$PROJECT_DIR$/CameraAlbum/CameraAlbum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Contacts/Contacts.iml" filepath="$PROJECT_DIR$/Contacts/Contacts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Database/Database.iml" filepath="$PROJECT_DIR$/Database/Database.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EventBus/EventBus.iml" filepath="$PROJECT_DIR$/EventBus/EventBus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FilePersistence/FilePersistence.iml" filepath="$PROJECT_DIR$/FilePersistence/FilePersistence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FragmentBestPractice/FragmentBestPractice.iml" filepath="$PROJECT_DIR$/FragmentBestPractice/FragmentBestPractice.iml" />
       <module fileurl="file://$PROJECT_DIR$/GetMyPhoneNumber/GetMyPhoneNumber.iml" filepath="$PROJECT_DIR$/GetMyPhoneNumber/GetMyPhoneNumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ListView/ListView.iml" filepath="$PROJECT_DIR$/ListView/ListView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LitePal/LitePal.iml" filepath="$PROJECT_DIR$/LitePal/LitePal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyMenu/MyMenu.iml" filepath="$PROJECT_DIR$/MyMenu/MyMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Network/Network.iml" filepath="$PROJECT_DIR$/Network/Network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Notes/Notes.iml" filepath="$PROJECT_DIR$/Notes/Notes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Notification/Notification.iml" filepath="$PROJECT_DIR$/Notification/Notification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PlayAudio/PlayAudio.iml" filepath="$PROJECT_DIR$/PlayAudio/PlayAudio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PlayVideo/PlayVideo.iml" filepath="$PROJECT_DIR$/PlayVideo/PlayVideo.iml" />
       <module fileurl="file://$PROJECT_DIR$/PracticeAndroid.iml" filepath="$PROJECT_DIR$/PracticeAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Provider/Provider.iml" filepath="$PROJECT_DIR$/Provider/Provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerView/RecyclerView.iml" filepath="$PROJECT_DIR$/RecyclerView/RecyclerView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RuntimePermission/RuntimePermission.iml" filepath="$PROJECT_DIR$/RuntimePermission/RuntimePermission.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServiceBestPractice/ServiceBestPractice.iml" filepath="$PROJECT_DIR$/ServiceBestPractice/ServiceBestPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SharedPreferences/SharedPreferences.iml" filepath="$PROJECT_DIR$/SharedPreferences/SharedPreferences.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TulingRobot/TulingRobot.iml" filepath="$PROJECT_DIR$/TulingRobot/TulingRobot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UIBestPractice/UIBestPractice.iml" filepath="$PROJECT_DIR$/UIBestPractice/UIBestPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UICustomViews/UICustomViews.iml" filepath="$PROJECT_DIR$/UICustomViews/UICustomViews.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UILayout/UILayout.iml" filepath="$PROJECT_DIR$/UILayout/UILayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UIWidget/UIWidget.iml" filepath="$PROJECT_DIR$/UIWidget/UIWidget.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Weather/Weather.iml" filepath="$PROJECT_DIR$/Weather/Weather.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebView/WebView.iml" filepath="$PROJECT_DIR$/WebView/WebView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/card2d/card2d.iml" filepath="$PROJECT_DIR$/card2d/card2d.iml" />
       <module fileurl="file://$PROJECT_DIR$/catchcrazycat/catchcrazycat.iml" filepath="$PROJECT_DIR$/catchcrazycat/catchcrazycat.iml" />
